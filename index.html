@@ -64,32 +64,20 @@
             <!-- Google Calendar Appointment Scheduling begin -->
                 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
                 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-                
-                <div id="google-calendar-btn-container" class="inline-block"></div>
-                
                 <script>
                 (function() {
-                  function initGoogleCalendar() {
-                    if (window.calendar && window.calendar.schedulingButton) {
-                      window.calendar.schedulingButton.load({
-                        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1x4IRhNw68bZ35oWCYnOncdcIUl3-dlNMiLcd1jyMR6MFI0HC8DEiHIDstiTQNVabinmLMT4oW?gv=true',
-                        color: '#00B4D8',
-                        label: 'Agendar Discovery Call',
-                        target: document.getElementById('google-calendar-btn-container'),
-                      });
-                    } else {
-                      setTimeout(initGoogleCalendar, 100);
-                    }
-                  }
-                
-                  if (document.readyState === 'complete' || document.readyState === 'interactive') {
-                    initGoogleCalendar();
-                  } else {
-                    window.addEventListener('DOMContentLoaded', initGoogleCalendar);
-                  }
+                  var target = document.currentScript;
+                  window.addEventListener('load', function() {
+                    calendar.schedulingButton.load({
+                      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1x4IRhNw68bZ35oWCYnOncdcIUl3-dlNMiLcd1jyMR6MFI0HC8DEiHIDstiTQNVabinmlMT4oW?gv=true',
+                      color: '#00adcf',
+                      label: "Agendar Discovery Call",
+                      target,
+                    });
+                  });
                 })();
                 </script>
-        <!-- end Google Calendar Appointment Scheduling -->
+            <!-- end Google Calendar Appointment Scheduling -->
         </div>
     </section>
 
