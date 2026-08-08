@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuardIAM | Expertos en Seguridad de Identidad y Entra ID</title>
-    <meta name="description" content="Firma consultora especializada en gestión de identidades (IAM) y seguridad en Microsoft Entra ID.">
-    <!-- Tailwind CSS CDN -->
+    <title>GuardIAM | Protegemos la Identidad Digital de tu Organización</title>
+    <!-- Favicon placeholder (Replace with your generated favicon) -->
+    <link rel="icon" type="image/png" href="Logo_Color.png">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -14,86 +23,146 @@
                     colors: {
                         midnight: '#081325',
                         titanium: '#5C6672',
-                        identitycyan: '#00B4D8',
+                        cyan: '#00B4D8',
                         ceramic: '#F8FAFC',
+                        charcoal: '#0F172A'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-ceramic text-gray-800 font-sans antialiased selection:bg-identitycyan selection:text-white">
+<body class="bg-ceramic text-midnight antialiased flex flex-col min-h-screen">
 
     <!-- Hero Section -->
-    <header class="bg-midnight text-white relative overflow-hidden">
-        <!-- Abstract Tech Background Element -->
-        <div class="absolute inset-0 opacity-10">
-            <svg class="absolute left-0 top-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0,100 L100,0 L100,100 Z" fill="#5C6672"></path>
-            </svg>
-        </div>
+    <section class="bg-midnight text-white py-24 px-4 relative overflow-hidden">
+        <!-- Subtle background pattern/gradient (optional touch of class) -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-cyan via-midnight to-midnight pointer-events-none"></div>
         
-        <div class="relative max-w-7xl mx-auto px-6 py-24 lg:py-32 flex flex-col items-center text-center">
-            <!-- Aquí irá tu logo después, por ahora en texto estilizado -->
-            <div class="text-4xl font-bold tracking-widest mb-8 text-white flex items-center gap-1">
-                G<span class="text-identitycyan">U</span>ARDIAM
-            </div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <img src="Logo_White.png" alt="GuardIAM Logo" class="h-16 mx-auto mb-10 object-contain">
             
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-                Protegemos la <span class="text-identitycyan">Identidad Digital</span><br> de tu Organización.
+            <p class="text-cyan font-semibold tracking-wider uppercase text-sm mb-4">Expertos en Identity & Access Management (IAM)</p>
+            
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Protegemos la <span class="text-cyan">Identidad Digital</span><br class="hidden md:block"> de tu Organización.
             </h1>
-            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mb-10">
-                Firma boutique de consultoría especializada en Arquitectura de Cero Confianza (Zero Trust), Microsoft Entra ID y Gobernanza de Identidades (IGA).
-            </p>
-            <div class="flex gap-4">
-                <a href="mailto:contacto@guardiam.mx" class="bg-identitycyan hover:bg-cyan-500 text-midnight font-bold py-3 px-8 rounded-md transition duration-300">
-                    Agendar Assessment
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Services Section -->
-    <section class="py-20 max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-midnight mb-4">Nuestras Soluciones Especializadas</h2>
-            <div class="h-1 w-20 bg-identitycyan mx-auto"></div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <!-- Service 1 -->
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
-                <div class="w-12 h-12 bg-midnight text-identitycyan rounded-lg flex items-center justify-center mb-6 text-2xl font-bold">01</div>
-                <h3 class="text-xl font-bold text-midnight mb-3">Entra ID Security Assessment</h3>
-                <p class="text-titanium text-sm leading-relaxed">
-                    Auditoría profunda de su postura de seguridad, políticas de Acceso Condicional, MFA gaps y remediación de cuentas huérfanas en Microsoft Entra ID.
-                </p>
-            </div>
             
-            <!-- Service 2 -->
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
-                <div class="w-12 h-12 bg-midnight text-identitycyan rounded-lg flex items-center justify-center mb-6 text-2xl font-bold">02</div>
-                <h3 class="text-xl font-bold text-midnight mb-3">Gobernanza de Identidades (IGA)</h3>
-                <p class="text-titanium text-sm leading-relaxed">
-                    Alineación con marcos regulatorios, certificación de accesos, integración con SailPoint y control estricto de privilegios (PAM).
-                </p>
-            </div>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                Firma boutique de consultoría especializada en Arquitectura de Cero Confianza (Zero Trust), Microsoft Entra ID y Gobernanza de Identidades (IGA). Mitigamos riesgos sin interrumpir tu operación diaria.
+            </p>
+            
+            <!-- Google Appointment Scheduling CTA -->
+            <a href="#URL_DE_TU_GOOGLE_APPOINTMENT_AQUI" class="inline-block bg-cyan hover:bg-cyan/90 text-midnight font-bold py-4 px-10 rounded shadow-lg shadow-cyan/20 transition-all duration-300 text-lg transform hover:-translate-y-1">
+                Agendar Discovery Call
+            </a>
+        </div>
+    </section>
 
-            <!-- Service 3 -->
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
-                <div class="w-12 h-12 bg-midnight text-identitycyan rounded-lg flex items-center justify-center mb-6 text-2xl font-bold">03</div>
-                <h3 class="text-xl font-bold text-midnight mb-3">Arquitectura Zero Trust</h3>
-                <p class="text-titanium text-sm leading-relaxed">
-                    Transformación de la complejidad técnica del control de accesos en una ventaja de negocio. El acceso correcto, a la persona correcta, en el momento preciso.
-                </p>
+    <!-- Pain / Context Section -->
+    <section class="py-20 px-4 bg-white border-b border-gray-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-midnight">
+                El 80% de las brechas de seguridad comienzan con una <span class="text-cyan">identidad comprometida</span>.
+            </h2>
+            <p class="text-titanium text-lg md:text-xl leading-relaxed">
+                Las configuraciones heredadas, la falta de gobierno sobre cuentas de servicio y las brechas en MFA dentro de <strong>Microsoft Entra ID</strong> son la principal puerta de entrada para ataques de ransomware y movimiento lateral. Si tu directorio activo migró a la nube orgánicamente, es probable que existan vulnerabilidades silenciosas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="py-24 px-4 bg-ceramic">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-midnight">Evaluación Profunda. <span class="text-cyan">Cero Impacto Operativo.</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                    <div class="text-cyan text-5xl font-bold mb-6 opacity-80">01</div>
+                    <h3 class="text-2xl font-bold mb-3 text-midnight">Alineación Estratégica</h3>
+                    <p class="text-titanium leading-relaxed">Sesión ejecutiva (Kickoff) para entender la arquitectura actual, los requerimientos de cumplimiento y los dolores operativos de tu equipo de TI.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                    <div class="text-cyan text-5xl font-bold mb-6 opacity-80">02</div>
+                    <h3 class="text-2xl font-bold mb-3 text-midnight">Auditoría Read-Only</h3>
+                    <p class="text-titanium leading-relaxed">Análisis exhaustivo de tu postura en Entra ID utilizando accesos de solo lectura (Global Reader). Sin cambios en producción, sin interrupciones para tus usuarios.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                    <div class="text-cyan text-5xl font-bold mb-6 opacity-80">03</div>
+                    <h3 class="text-2xl font-bold mb-3 text-midnight">Reporte Ejecutivo</h3>
+                    <p class="text-titanium leading-relaxed">Entrega de hallazgos categorizados por nivel de criticidad (Riesgo, Impacto y Esfuerzo) junto con un plan de remediación técnico directamente accionable.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Solutions Section -->
+    <section class="py-24 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-midnight">Nuestras Soluciones Especializadas</h2>
+            <div class="w-24 h-1 bg-cyan mx-auto mb-16"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Solution 1 -->
+                <div class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-start relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-cyan transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <div class="bg-midnight text-cyan font-bold py-2 px-4 rounded-md mb-8 text-xl">01</div>
+                    <h3 class="text-2xl font-bold mb-4 text-midnight">Entra ID Security Assessment</h3>
+                    <p class="text-titanium leading-relaxed">Auditoría profunda de su postura de seguridad, políticas de Acceso Condicional, MFA gaps y remediación de cuentas huérfanas en Microsoft Entra ID.</p>
+                </div>
+                
+                <!-- Solution 2 -->
+                <div class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-start relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-cyan transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <div class="bg-midnight text-cyan font-bold py-2 px-4 rounded-md mb-8 text-xl">02</div>
+                    <h3 class="text-2xl font-bold mb-4 text-midnight">Gobernanza de Identidades (IGA)</h3>
+                    <p class="text-titanium leading-relaxed">Alineación con marcos regulatorios, certificación de accesos, integración con SailPoint y control estricto de privilegios (PAM).</p>
+                </div>
+                
+                <!-- Solution 3 -->
+                <div class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-start relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-cyan transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <div class="bg-midnight text-cyan font-bold py-2 px-4 rounded-md mb-8 text-xl">03</div>
+                    <h3 class="text-2xl font-bold mb-4 text-midnight">Arquitectura Zero Trust</h3>
+                    <p class="text-titanium leading-relaxed">Transformación de la complejidad técnica del control de accesos en una ventaja de negocio. El acceso correcto, a la persona correcta, en el momento preciso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="bg-charcoal text-white py-16 px-4 text-center border-t border-gray-800">
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+            <svg class="w-12 h-12 text-cyan mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            <p class="text-xl md:text-2xl font-light leading-relaxed">
+                <strong class="font-bold text-cyan">+15 Años de Experiencia Técnica.</strong><br class="hidden md:block"> 
+                Arquitectura liderada por especialistas certificados a nivel <em class="italic text-gray-300">Expert</em> en plataformas líderes del mercado y metodologías CIAM.
+            </p>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-midnight text-titanium py-8 text-center border-t border-gray-800">
-        <p class="mb-2">contacto@guardiam.mx | México</p>
-        <p class="text-sm">&copy; 2026 GuardIAM. Todos los derechos reservados.</p>
+    <footer class="bg-midnight text-titanium py-10 text-center text-sm mt-auto border-t border-gray-800">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <img src="Logo_White.png" alt="GuardIAM Logo" class="h-6 mb-4 md:mb-0 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
+                <a href="mailto:contacto@guardiam.mx" class="hover:text-cyan transition-colors">contacto@guardiam.mx</a>
+                <span>|</span>
+                <span>México</span>
+            </div>
+            <p class="mt-4 md:mt-0">&copy; 2026 GuardIAM. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 </body>
