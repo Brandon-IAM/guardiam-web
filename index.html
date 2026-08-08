@@ -1,1 +1,100 @@
-<h1>Sitio en construccion</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardIAM | Expertos en Seguridad de Identidad y Entra ID</title>
+    <meta name="description" content="Firma consultora especializada en gestión de identidades (IAM) y seguridad en Microsoft Entra ID.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#081325',
+                        titanium: '#5C6672',
+                        identitycyan: '#00B4D8',
+                        ceramic: '#F8FAFC',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ceramic text-gray-800 font-sans antialiased selection:bg-identitycyan selection:text-white">
+
+    <!-- Hero Section -->
+    <header class="bg-midnight text-white relative overflow-hidden">
+        <!-- Abstract Tech Background Element -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="absolute left-0 top-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0,100 L100,0 L100,100 Z" fill="#5C6672"></path>
+            </svg>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 py-24 lg:py-32 flex flex-col items-center text-center">
+            <!-- Aquí irá tu logo después, por ahora en texto estilizado -->
+            <div class="text-4xl font-bold tracking-widest mb-8 text-white flex items-center gap-1">
+                G<span class="text-identitycyan">U</span>ARDIAM
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Protegemos la <span class="text-identitycyan">Identidad Digital</span><br> de tu Organización.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mb-10">
+                Firma boutique de consultoría especializada en Arquitectura de Cero Confianza (Zero Trust), Microsoft Entra ID y Gobernanza de Identidades (IGA).
+            </p>
+            <div class="flex gap-4">
+                <a href="mailto:contacto@guardiam.mx" class="bg-identitycyan hover:bg-cyan-500 text-midnight font-bold py-3 px-8 rounded-md transition duration-300">
+                    Agendar Assessment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-midnight mb-4">Nuestras Soluciones Especializadas</h2>
+            <div class="h-1 w-20 bg-identitycyan mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Service 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="w-12 h-12 bg-midnight text-identitycyan rounded-lg flex items-center justify-center mb-6 text-2xl font-bold">01</div>
+                <h3 class="text-xl font-bold text-midnight mb-3">Entra ID Security Assessment</h3>
+                <p class="text-titanium text-sm leading-relaxed">
+                    Auditoría profunda de su postura de seguridad, políticas de Acceso Condicional, MFA gaps y remediación de cuentas huérfanas en Microsoft Entra ID.
+                </p>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="w-12 h-12 bg-midnight text-identitycyan rounded-lg flex items-center justify-center mb-6 text-2xl font-bold">02</div>
+                <h3 class="text-xl font-bold text-midnight mb-3">Gobernanza de Identidades (IGA)</h3>
+                <p class="text-titanium text-sm leading-relaxed">
+                    Alineación con marcos regulatorios, certificación de accesos, integración con SailPoint y control estricto de privilegios (PAM).
+                </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="w-12 h-12 bg-midnight text-identitycyan rounded-lg flex items-center justify-center mb-6 text-2xl font-bold">03</div>
+                <h3 class="text-xl font-bold text-midnight mb-3">Arquitectura Zero Trust</h3>
+                <p class="text-titanium text-sm leading-relaxed">
+                    Transformación de la complejidad técnica del control de accesos en una ventaja de negocio. El acceso correcto, a la persona correcta, en el momento preciso.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-midnight text-titanium py-8 text-center border-t border-gray-800">
+        <p class="mb-2">contacto@guardiam.mx | México</p>
+        <p class="text-sm">&copy; 2026 GuardIAM. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
