@@ -61,9 +61,23 @@
             </p>
             
             <!-- Google Appointment Scheduling CTA -->
-            <a href="https://calendar.app.google/MKaFmsPhwVMaxdJj6" class="inline-block bg-cyan hover:bg-cyan/90 text-midnight font-bold py-4 px-10 rounded shadow-lg shadow-cyan/20 transition-all duration-300 text-lg transform hover:-translate-y-1">
-                Agendar Discovery Call
-            </a>
+            <!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1x4IRhNw68bZ35oWCYnOncdcIUl3-dlNMiLcd1jyMR6MFI0HC8DEiHIDstiTQNVabinmlMT4oW?gv=true',
+      color: '#039BE5',
+      label: 'Programar una cita',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
         </div>
     </section>
 
